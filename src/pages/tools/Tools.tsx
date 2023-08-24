@@ -1,7 +1,7 @@
 import {Typography} from "@mui/material";
 
 import React, {useState} from "react";
-import ScrollPage from "../components/ScrollPage";
+import ScrollPage from "../../components/ScrollPage";
 
 function Tools() {
     return (
