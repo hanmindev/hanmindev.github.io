@@ -53,9 +53,6 @@ function Featured() {
                         <Typography variant="body1" paragraph={true}>
                             For general inquiries please email me at <address><a href="mailto:hanminkim123@gmail.com">hanminkim123@gmail.com</a></address>
                         </Typography>
-                        <Typography variant="body1" paragraph={true}>
-                            Alternatively, for casual contacts, message me on Discord! <b>HanMango Kiwi#1798<Copybutton copyText="HanMango Kiwi#1798" copyMessage="Copy Discord ID" /></b>
-                        </Typography>
 
                     </div>
 
@@ -67,7 +64,7 @@ function Featured() {
                             For Minecraft-related inquiries please email me at <address><a href="mailto:commanderredstoneofficial@gmail.com">commanderredstoneofficial@gmail.com</a></address>
                         </Typography>
                         <Typography variant="body1" paragraph={true}>
-                            Alternatively, for casual contacts, message me on Discord! <b>CommanderRedstone#8792<Copybutton copyText="CommanderRedstone#8792" copyMessage="Copy Discord ID" /></b>
+                            Alternatively, for casual contacts, message me on Discord! <b>cmdrredstone<Copybutton copyText="cmdrredstone" copyMessage="Copy Discord ID" /></b>
                         </Typography>
                     </div>
                 </div>
