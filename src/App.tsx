@@ -4,7 +4,6 @@ import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Header from './components/Header';
 
 import Home from './pages/Home';
-import Mirrorboard from "./pages/projects/Mirrorboard";
 import Projects from "./pages/projects/Projects";
 import { ThemeProvider} from "@mui/material";
 import {createTheme} from "@mui/material/styles";
@@ -44,9 +43,6 @@ function App() {
                   <Route path="/projects/:projectName?" element={<Projects />} />
                   <Route path="/tools" element={<Tools />} />
                   <Route path="/contact" element={<Contact />} />
-
-
-                  <Route path="/mirrorboard" element={<Mirrorboard />} />
               </Routes>
           </div>
       </Router>
