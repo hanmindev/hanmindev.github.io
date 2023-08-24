@@ -8,7 +8,7 @@ import Projects from "./pages/projects/Projects";
 import { ThemeProvider} from "@mui/material";
 import {createTheme} from "@mui/material/styles";
 import Contact from "./pages/Contact";
-import Tools from "./pages/Tools";
+import Tools from "./pages/tools/Tools";
 import ScrollToTop from "./helpers/ScrollToTop";
 
 
@@ -41,7 +41,7 @@ function App() {
               <Routes>
                   <Route index path="/" element={<Home />} />
                   <Route path="/projects/:projectName?" element={<Projects />} />
-                  <Route path="/tools" element={<Tools />} />
+                  <Route path="/tools/:toolName?" element={<Tools />} />
                   <Route path="/contact" element={<Contact />} />
               </Routes>
           </div>
