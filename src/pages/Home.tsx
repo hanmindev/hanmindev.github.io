@@ -67,7 +67,7 @@ function Featured() {
                     Featured
                 </Typography>
             </div>
-            <BoxContent type="gfycat" videoLink="https://thumbs.gfycat.com/ColorfulTerribleBlackrhino-mobile.mp4"
+            <BoxContent type="gfycat" videoLink="https://i.imgur.com/gWPX6uJ.mp4"
             title={<ExternalLink href="https://www.pcgamer.com/this-minecraft-3d-graphing-calculator-is-hypnotic-and-beautiful/"
                                  text="This Minecraft 3D graphing calculator is hypnotic and beautiful" underline/>}
             subtitle="PC Gamer Article by Rich Stanton"
