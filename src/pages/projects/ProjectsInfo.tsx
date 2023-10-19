@@ -30,15 +30,15 @@ function Markdown(props: {md: string}) {
 
     return (
         md? <ReactMarkdown className="markdown-body" children={md} remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight, rehypeRaw]}
-                       components={
-                           {
-                               // eslint-disable-next-line jsx-a11y/alt-text
-                               img:({node,...props})=><img style={{maxWidth:'100%'}}{...props} alt={props.alt}/>,
-                               // eslint-disable-next-line jsx-a11y/anchor-has-content
-                               a:({node,...props})=><a target="_blank" rel="noreferrer" style={{color: "#3ea0fd"}} {...props}/>,
-                               // @ts-ignore
-                               video: ({node, ...props}) => <p>{<VideoPlayer raw type={props.children.toString().split(';')[0]} videoLink={props.children.toString().split(';')[1]} play={true} autoplay={true} />}</p>
-                           }}/> :
+                           components={
+                               {
+                                   // eslint-disable-next-line jsx-a11y/alt-text
+                                   img:({node,...props})=><img style={{maxWidth:'100%'}}{...props} alt={props.alt}/>,
+                                   // eslint-disable-next-line jsx-a11y/anchor-has-content
+                                   a:({node,...props})=><a target="_blank" rel="noreferrer" style={{color: "#3ea0fd"}} {...props}/>,
+                                   // @ts-ignore
+                                   video: ({node, ...props}) => <p>{<VideoPlayer raw type={props.children.toString().split(';')[0]} videoLink={props.children.toString().split(';')[1]} play={true} autoplay={true} />}</p>
+                               }}/> :
             (
                 <Skeleton variant="rectangular" animation="wave" height={100} />
             )
@@ -82,11 +82,11 @@ const projects: {[projectKey: string]: {name: string; subtitle: string; image?: 
     'lucid': {
         name: "Lucid - Hack the North 2022 Winner",
         subtitle: "Let's turn that book into a movie. Text to movie, directed by AI.",
-        video: "https://thumbs.gfycat.com/DescriptivePiercingHorsefly-mobile.mp4",
+        video: "https://i.imgur.com/klWu8Ds.mp4",
         description: `Paste in a text and it will identify the key scenes before turning it into a narrated movie. Favourite book, historical battle, or rant about work. Anything and everything, if you can read it, Lucid can dream it.`,
         content: (
             <>
-                <VideoPlayer type="gfycat" videoLink="https://thumbs.gfycat.com/DescriptivePiercingHorsefly-mobile.mp4" autoplay={true}/>
+                <VideoPlayer type="gfycat" videoLink="https://i.imgur.com/klWu8Ds.mp4" autoplay={true}/>
                 <Markdown md="lucid"/>
             </>
         ),
@@ -224,7 +224,7 @@ const projects: {[projectKey: string]: {name: string; subtitle: string; image?: 
         description: `Tired of moving your hand back and forth from the mouse to the keyboard? The answer is probably no but here it is anyways.`,
         content: (
             <>
-                <VideoPlayer type="iframe" videoLink="https://www.youtube.com/embed/25-bn42cae4"/>
+                <VideoPlayer type="iframe" videoLink="https://www.youtube.com/embed/L4qHOcTEYSc"/>
                 <Markdown md="mirrorboard"/>
                 <Typography variant="body1" color="text.secondary" align="center">
                     Check out the project!
@@ -268,7 +268,7 @@ const projects: {[projectKey: string]: {name: string; subtitle: string; image?: 
     '3dgrapher': {
         name: "Real-Time 3D Graphing in Vanilla Minecraft",
         subtitle: "Who said games can't be educational?",
-        video: "https://thumbs.gfycat.com/ColorfulTerribleBlackrhino-mobile.mp4",
+        video: "https://i.imgur.com/gWPX6uJ.mp4",
         description: `The third iteration of this calculator brings incredible performance benefits and a new UI. At 8 kiloFLOPS, it is 100x faster than the SAT-approved TI-84.`,
         content: (
             <>
@@ -329,11 +329,11 @@ const projects: {[projectKey: string]: {name: string; subtitle: string; image?: 
     'mcmv': {
         name: "MCMV",
         subtitle: "Motion Capture to Voxel Animation Converter",
-        video: "https://thumbs.gfycat.com/FatLivelyArcticseal-mobile.mp4",
+        video: "https://i.imgur.com/TbVdAC6.mp4",
         description: `Convert your motion capture data into a format compatible with Blockbench to export it as an .OBJ, as a .FBX, to Minecraft, and more!`,
         content: (
             <>
-                <VideoPlayer type="gfycat" videoLink="https://thumbs.gfycat.com/FatLivelyArcticseal-mobile.mp4" autoplay={true}/>
+                <VideoPlayer type="gfycat" videoLink="https://i.imgur.com/TbVdAC6.mp4" autoplay={true}/>
                 <Markdown md="mcmv"/>
             </>
         ),
@@ -397,7 +397,7 @@ const projects: {[projectKey: string]: {name: string; subtitle: string; image?: 
     'mccloth': {
         name: "Cloth Physics in Minecraft",
         subtitle: "Wouldn't it be funny if someone actually made this?",
-        video: "https://thumbs.gfycat.com/CarefreeGrandAkitainu-mobile.mp4",
+        video: "https://i.imgur.com/q6GdBp6.mp4",
         description: `I can't even remember why I made this, I was 16 and lockdowns made me bored`
     },
     'mc4d': {
@@ -409,7 +409,7 @@ const projects: {[projectKey: string]: {name: string; subtitle: string; image?: 
     'mcwave': {
         name: "Wave Phenomenon using Huygens–Fresnel principle",
         subtitle: "Waves are hard",
-        video: "https://thumbs.gfycat.com/AnchoredFrayedArmednylonshrimp-mobile.mp4",
+        video: "https://i.imgur.com/r7JVHlx.mp4",
         description: `During physics class, our class had disagreements on whether Huygens' principle was correct or not. I decided to make a program to prove it.`
     },
     'soundmood': {
@@ -427,45 +427,45 @@ const projects: {[projectKey: string]: {name: string; subtitle: string; image?: 
     'buildandconquer': {
         name: "Build and Conquer - Base-Builder RTS",
         subtitle: "Now with 100% more base-building",
-        video: "https://thumbs.gfycat.com/ThoseHugeFlatfish-mobile.mp4",
+        video: "https://i.imgur.com/JLIBJSt.mp4",
         description: `A game where you build a base and then conquer the world. Build more power plants! Build more factories! Launch more satellites!`
     },
     'reflections': {
         name: "Reflections - Mirror and Laser Game",
         subtitle: "A game where the menu took longer than the actual game to make",
-        video: "https://thumbs.gfycat.com/SorrowfulHeartyAcaciarat-mobile.mp4",
+        video: "https://i.imgur.com/ZXw2drv.mp4",
         description: `"I created most of the tools they use and I don’t know how they did that!" - "Michael "Searge" Stoyke" , Developer at Mojang AB (I don't know how we did it either)`
     },
     'gravitysim': {
         name: "3D Gravity Simulator",
         subtitle: "Watch the systems fly around",
-        video: "https://thumbs.gfycat.com/UnconsciousEnchantingCod-mobile.mp4",
+        video: "https://i.imgur.com/4KLZt5f.mp4",
         description: `A 3D gravity simulator that uses the gravitational formula to calculate the forces between objects.`
     },
     'herofair': {
         name: "HeroFair Amusement Park",
         subtitle: "This is funding my education",
-        video: "https://thumbs.gfycat.com/OptimalExcellentAcaciarat-mobile.mp4",
+        video: "https://i.imgur.com/vc8Un1u.mp4",
         description: `A huge, working amusement park, available on the Minecraft Marketplace!`
     },
     'colors': {
         name: "Colors - Puzzle Game v2",
         subtitle: "Mind-bending puzzle game, now with more colors!",
-        video: "https://thumbs.gfycat.com/UnkemptSpryHoopoe-mobile.mp4",
+        video: "https://i.imgur.com/mJczvdK.mp4",
         description: `Paint everything, don't run out of moves. Like Gray, but with more colors.`
     },
     'gray': {
-            name: "Gray - Puzzle Game",
-            subtitle: "Mind-bending puzzle game",
-            video: "https://thumbs.gfycat.com/WideeyedSourApe-mobile.mp4",
-            description: `Stepping on a tile changes it's color. Turn them all on to win.`
-        },
+        name: "Gray - Puzzle Game",
+        subtitle: "Mind-bending puzzle game",
+        video: "https://i.imgur.com/TrRjEvZ.mp4",
+        description: `Stepping on a tile changes it's color. Turn them all on to win.`
+    },
     'spacewars': {
-            name: "Space Wars - Minecraft Minigame",
-            subtitle: "Endless fun in a 3D arena",
-            video: "https://thumbs.gfycat.com/HelpfulLoathsomeKissingbug-mobile.mp4",
-            description: `In space, there is no up or down.`
-        },
+        name: "Space Wars - Minecraft Minigame",
+        subtitle: "Endless fun in a 3D arena",
+        video: "https://i.imgur.com/jo5mT3d.mp4",
+        description: `In space, there is no up or down.`
+    },
 }
 
 export default function getProject(projectName: string): {name: string; subtitle: string; image?: string; video?: string; description: string; content?: ReactElement; externalLinks?: ReactElement} {
