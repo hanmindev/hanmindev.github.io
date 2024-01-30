@@ -41,7 +41,7 @@ function Footer() {
 
                         <Tooltip title="GitHub">
                             <IconButton>
-                                <a href="https://github.com/hanmangokiwi"
+                                <a href="https://github.com/hanmindev"
                                    target="_blank"
                                    rel="noreferrer">
                                     <GitHubIcon />

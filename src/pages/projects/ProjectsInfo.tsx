@@ -69,7 +69,7 @@ const projects: {[projectKey: string]: {name: string; subtitle: string; image?: 
                 </Tooltip>
                 <Tooltip title="GitHub">
                     <IconButton>
-                        <a href="https://github.com/hanmangokiwi/vidqr"
+                        <a href="https://github.com/hanmindev/vidqr"
                            target="_blank"
                            rel="noreferrer">
                             <GitHubIcon />
@@ -255,7 +255,7 @@ const projects: {[projectKey: string]: {name: string; subtitle: string; image?: 
                 </Tooltip>
                 <Tooltip title="GitHub">
                     <IconButton>
-                        <a href="https://github.com/hanmangokiwi/mirrorboard"
+                        <a href="https://github.com/hanmindev/mirrorboard"
                            target="_blank"
                            rel="noreferrer">
                             <GitHubIcon />
@@ -316,7 +316,7 @@ const projects: {[projectKey: string]: {name: string; subtitle: string; image?: 
                 </Tooltip>
                 <Tooltip title="GitHub">
                     <IconButton>
-                        <a href="https://github.com/hanmangokiwi/Hmmm"
+                        <a href="https://github.com/hanmindev/Hmmm"
                            target="_blank"
                            rel="noreferrer">
                             <GitHubIcon />
@@ -350,7 +350,7 @@ const projects: {[projectKey: string]: {name: string; subtitle: string; image?: 
                 </Tooltip>
                 <Tooltip title="GitHub">
                     <IconButton>
-                        <a href="https://github.com/hanmangokiwi/MCMV"
+                        <a href="https://github.com/hanmindev/MCMV"
                            target="_blank"
                            rel="noreferrer">
                             <GitHubIcon />
@@ -384,7 +384,7 @@ const projects: {[projectKey: string]: {name: string; subtitle: string; image?: 
                 </Tooltip>
                 <Tooltip title="GitHub">
                     <IconButton>
-                        <a href="https://github.com/hanmangokiwi/minecraft-ntgbtminer"
+                        <a href="https://github.com/hanmindev/minecraft-ntgbtminer"
                            target="_blank"
                            rel="noreferrer">
                             <GitHubIcon />
