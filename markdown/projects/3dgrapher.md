@@ -34,7 +34,7 @@ Then I didn't touch it for a while.
 
 One day, after thinking about the magical [fast inverse square root](https://en.wikipedia.org/wiki/Fast_inverse_square_root) algorithm, I wondered whether I could make the calculator even faster. So I got to work building the third iteration of the calculator.
 
-Versions 1 and 2 of the calculator ran on a fixed-decimal system, because the only numbers Minecraft has are 32-bit signed integers. However, the fast inverse square root algorithm requires the use of floating point numbers. Thus, I created [Hmmm](https://github.com/hanmangokiwi/Hmmm), a software implementation of floating point arithmetic for Minecraft, which was a lot of work
+Versions 1 and 2 of the calculator ran on a fixed-decimal system, because the only numbers Minecraft has are 32-bit signed integers. However, the fast inverse square root algorithm requires the use of floating point numbers. Thus, I created [Hmmm](https://github.com/hanmindev/Hmmm), a software implementation of floating point arithmetic for Minecraft, which was a lot of work
 
 I had done a few [tests](https://www.youtube.com/watch?v=sD1Kq7GAUuw) in the past to make the equation parsing faster using the shunting-yard algorithm. With that, research into Minecraft's command implementations, and a better grasp on memory models and data structures, I was able to make a version that was up to 400x faster than the previous version.
 
