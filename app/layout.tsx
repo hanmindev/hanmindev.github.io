@@ -21,7 +21,7 @@ export default function RootLayout({
     <body className={inter.className}>
     <div className="absolute flex flex-col w-full">
       <Header />
-      <main className="flex min-h-screen flex-col items-center justify-between pt-24 px-8">
+      <main className="flex min-h-screen flex-col items-center justify-between pt-24 px-8 pb-20 xl:pb-0">
         <div className="z-10 w-full max-w-screen-lg items-center justify-between font-karla">
           {children}
         </div>
