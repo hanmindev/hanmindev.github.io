@@ -45,7 +45,7 @@ export default function Home() {
                description="I did a variety of tasks, such as integrating Nx into our Angular monorepo CI pipeline, creating a custom systems integration to transform and update information between enterprise systems, and buitl a system to automatically track and synchronize data using a custom Hubspot public app and Azure Functions." />
       <ExpNode src={NorvaleLogo} title="Software Developer" company="Norvale"
                duration="August 2018 - December 2022"
-               description="I've been working with Norvale for many years now (even longer if you consider the projects I worked on with them before they were a company!). I was the main developer for several projects where I programmed the game logic, UI, physics engines, and more, which would make their way into Microsoft's Minecraft Marketplace." />
+               description="I worked with Norvale for many years (even longer if you consider the projects I worked on with them before they were a company!). I was the main developer for several projects where I programmed the game logic, UI, physics engines, and more, which would make their way into Microsoft's Minecraft Marketplace." />
     </ExpList>
   </>;
 }
