@@ -14,7 +14,7 @@ function ExpNode({ src, title, company, duration, location, description }: {
   return <div className="flex flex-row space-x-4">
     <div className="flex flex-col items-center">
       <Image src={src} alt="company-logo" className="w-16 h-16 min-h-16 min-w-16 rounded-lg" />
-      <span className="h-full w-0.5 bg-gray-600" />
+      <span className="h-full w-0.5 bg-gray-600 mr-2 mt-2" />
     </div>
     <div>
       <p className="text-xl font-semibold">{title}</p>
