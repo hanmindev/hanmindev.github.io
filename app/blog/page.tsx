@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { BlogMeta } from "@/app/blog/*/page.mdx";
+
 function BlogCard({ title, description, link }: { title: string, description: string, link: string }) {
   return <div className="group card max-w-full transition-transform duration-100 hover:scale-105">
     <Link className="card-body" href={link}>
@@ -15,24 +17,28 @@ function BlogList({ children }: { children: React.ReactNode }) {
   </div>;
 }
 
+function BlogCardWrapper({ metadata, link }: { metadata: BlogMeta, link: string }) {
+  const { title, description } = metadata;
+
+  return <BlogCard title={title} description={description} link={link} />;
+}
+
+// I really don't like this, but I can't think of a better static way to do this
+import { meta as m0 } from "@/app/blog/uoft-cs-guide/page.mdx";
+import { meta as m1 } from "@/app/blog/mirrorboard/page.mdx";
+import { meta as m2 } from "@/app/blog/split-keyboard/page.mdx";
+import { meta as m3 } from "@/app/blog/minecraft-bitcoin/page.mdx";
+
 export default function Home() {
   return <>
     <p className="text-xl font-bold">Blog</p>
     <p>Random writeups.</p>
     <div className="divider"></div>
     <BlogList>
-      <BlogCard title="Unofficial UofT CS Min-Max Intern Guide (and other General Advice)"
-                description="Still can't get over how much better Waterloo's Co-Op program is? This guide is for you!"
-                link="/uoft-cs-guide" />
-      <BlogCard title="How I type 80 WPM using One Hand"
-                description="I didn't like how I had to switch between my mouse and keyboard so often, so I decided to create a one-handed typing layout. Now I can brush my teeth while programming!"
-                link="/mirrorboard" />
-      <BlogCard title="My Split Ergonomic Keyboard is a Performance Game Changer"
-                description="The Dactyl Manuform is an oddly-shaped keyboard which I've grown to love. Going back to a regular keyboard feels like eating instant noodles after having a gourmet, wallet-breaking meal."
-                link="/split-keyboard" />
-      <BlogCard title="How to Mine Bitcoin using Minecraft"
-                description="Mining the world-famous cryptocurrency using the world-famous mining software."
-                link="/minecraft-bitcoin" />
+      <BlogCardWrapper metadata={m0} link="/blog/uoft-cs-guide" />
+      <BlogCardWrapper metadata={m1} link="/blog/mirrorboard" />
+      <BlogCardWrapper metadata={m2} link="/blog/split-keyboard" />
+      <BlogCardWrapper metadata={m3} link="/blog/minecraft-bitcoin" />
     </BlogList>
   </>;
 }
