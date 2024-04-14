@@ -22,7 +22,7 @@ export default function RootLayout({
     <div className="absolute flex flex-col w-full">
       <Header />
       <main className="flex min-h-screen flex-col items-center justify-between pt-24">
-        <div className="z-10 w-full max-w-3xl items-center justify-between font-karla">
+        <div className="z-10 w-full max-w-screen-lg items-center justify-between font-karla">
           {children}
         </div>
       </main>
