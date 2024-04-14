@@ -2,7 +2,7 @@ import { EmailIcon, GithubIcon, LinkedInIcon } from "@/app/components/icons/cont
 
 export function Footer() {
   return (
-    <footer className="flex justify-end space-x-4 -mt-12 mr-8">
+    <footer className="fixed bottom-8 right-8 flex justify-end space-x-4">
       <span className="tooltip tooltip-top" data-tooltip="Email">
         <a href="mailto:hanminkim123@gmail.com/"
            target="_blank"
