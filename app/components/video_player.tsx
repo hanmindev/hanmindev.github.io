@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import useOnScreen from "../helpers/hooks";
 import Image from "next/image";
 
-function VideoPlayer({ raw, type, video_link, play, autoplay }: {
+export default function VideoPlayer({ raw, type, video_link, play, autoplay }: {
   raw?: boolean;
   type: string;
   video_link: string;
@@ -52,5 +52,3 @@ function VideoPlayer({ raw, type, video_link, play, autoplay }: {
     </div>
   );
 }
-
-export default VideoPlayer;
