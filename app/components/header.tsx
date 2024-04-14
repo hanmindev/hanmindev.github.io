@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export function Header() {
-  return <div className="navbar navbar-sticky navbar-glass">
+  return <header className="navbar navbar-sticky navbar-glass">
     <div className="navbar-start">
       <Link className="navbar-item link" href="/">
         <label className="btn btn-ghost flex cursor-pointer px-2 space-x-3" tabIndex={0}>
@@ -12,11 +12,10 @@ export function Header() {
     </div>
     <div className="navbar-end">
       <Link className="navbar-item" href="/">Home</Link>
-      <Link className="navbar-item" href="/experience">Experiences</Link>
+      <Link className="navbar-item" href="/experience">Experience</Link>
       <Link className="navbar-item" href="/projects">Projects</Link>
       <Link className="navbar-item" href="/docs">Docs</Link>
       <Link className="navbar-item" href="/blog">Blog</Link>
-      <Link className="navbar-item" href="/contact">Contact</Link>
     </div>
-  </div>;
+  </header>;
 }
