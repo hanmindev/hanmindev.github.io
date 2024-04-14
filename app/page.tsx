@@ -1,4 +1,4 @@
-import VideoPlayer from "@/app/components/VideoPlayer";
+import VideoPlayer from "@/app/components/video_player";
 import Link from "next/link";
 
 function ExternalLink({ href, children }: { href: string, children: React.ReactNode }) {
