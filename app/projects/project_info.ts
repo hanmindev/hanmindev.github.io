@@ -155,7 +155,8 @@ export const project_list: ProjectData[] = [
         href: "https://youtu.be/qeyp5FN_WKk",
         text: "YouTube"
       }
-    ]
+    ],
+    blog: "/blog/3d-graphing-minecraft"
   },
 
   {
