@@ -65,11 +65,13 @@ function ProjectCard({ data }: { data: ProjectData }) {
 
         <p>{data.description}</p>
         <div className="flex justify-between items-center">
-          {data.blog ? <div>
-            <Link className="btn-primary btn hover:btn-success" href={data.blog}>
-              Learn More
-            </Link>
-          </div> : undefined}
+          <div>
+            {data.blog ?
+              <Link className="btn-primary btn hover:btn-success" href={data.blog}>
+                Learn More
+              </Link>
+              : undefined}
+          </div>
 
           <div className="flex space-x-1 justify-end">
             {data.links.map((link, i) => <IconMap key={i} type={link.type} tooltip={link.text} link={link.href} />)}
