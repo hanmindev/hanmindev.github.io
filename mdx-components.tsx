@@ -19,6 +19,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     li: ({ children }) => <li className="text-base">{children}</li>,
     code: ({ children }) => <code className="text-sm bg-gray-100 p-1 rounded">{children}</code>,
     inlineCode: ({ children }) => <code className="text-sm bg-gray-100 p-1 rounded">{children}</code>,
+    img: ({ src, alt }) => <img className="rounded-lg p-4 w-8/12" src={src} alt={alt} />,
 
     ...components
   };
