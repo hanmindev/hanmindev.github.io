@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import VideoPlayer from "@/app/components/video_player";
+import MediaDisplay from "@/app/components/media_display";
 import {
   DevPostIcon, DiscordIcon,
   DocumentIcon,
@@ -59,8 +59,8 @@ function ProjectCard({ data }: { data: ProjectData }) {
         <p className="italic">{data.subtitle}</p>
 
         <div className="relative rounded-md mb-3 overflow-clip h-52">
-          {<VideoPlayer type={data.media.type === "image" ? "image" : "gfycat"} video_link={data.media.src}
-                        autoplay={true} />}
+          {<MediaDisplay type={data.media.type === "image" ? "image" : "gfycat"} link={data.media.src}
+                         autoplay={true} />}
         </div>
 
         <p>{data.description}</p>
