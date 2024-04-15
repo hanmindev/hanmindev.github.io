@@ -1,4 +1,4 @@
-import { EmailIcon, GithubIcon, LinkedInIcon } from "@/app/components/icons/contact";
+import { EmailIcon, GitHubIcon, LinkedInIcon } from "@/app/components/icons/buttons";
 
 export function Footer() {
   return (
@@ -23,7 +23,7 @@ export function Footer() {
         <a href="https://github.com/hanmindev/"
            target="_blank"
            rel="noreferrer">
-            <GithubIcon />
+            <GitHubIcon />
           </a>
       </span>
     </footer>
