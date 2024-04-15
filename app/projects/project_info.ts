@@ -175,7 +175,8 @@ export const project_list: ProjectData[] = [
         href: "https://www.youtube.com/watch?v=L2yVFUgoeBY",
         text: "YouTube"
       }
-    ]
+    ],
+    blog: "/blog/mcmv"
   },
 
   {
