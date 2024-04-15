@@ -202,7 +202,12 @@ export const project_list: ProjectData[] = [
     subtitle: "Wouldn't it be funny if someone actually made this?",
     description: "I can't even remember why I made this, I was 16 and was bored during covid",
     media: { type: "video", src: "https://i.imgur.com/q6GdBp6.mp4" },
-    links: []
+    links: [
+      {
+        type: "youtube",
+        href: "https://www.youtube.com/watch?v=pNbTXKmgER8",
+        text: "YouTube"
+      }]
   },
 
   {
@@ -210,7 +215,12 @@ export const project_list: ProjectData[] = [
     subtitle: "Hypercubes make my head hurt",
     description: "Surprisingly there aren't many places you can find a 4D object renderer. I made one.",
     media: { type: "image", src: "https://i.imgur.com/g9urpsV.png" },
-    links: []
+    links: [
+      {
+        type: "youtube",
+        href: "https://www.youtube.com/watch?v=ZCv1B4-EwIk",
+        text: "YouTube"
+      }]
   },
 
   {
@@ -226,7 +236,17 @@ export const project_list: ProjectData[] = [
     subtitle: "Music is a powerful tool. Let's use it to help people.",
     description: "A Discord application that uses the Spotify API to track songs and provide feedback.",
     media: { type: "image", src: "https://i.imgur.com/aHdWwpt.png" },
-    links: []
+    links: [
+      {
+        type: "github",
+        href: "https://github.com/underHA/xdhacks-la-2020",
+        text: "GitHub"
+      },
+      {
+        type: "youtube",
+        href: "https://www.youtube.com/watch?v=DTWPGfeU49o",
+        text: "YouTube"
+      }]
   },
 
   {
@@ -234,7 +254,17 @@ export const project_list: ProjectData[] = [
     subtitle: "Many policies have been implemented to combat COVID-19. But which ones are effective?",
     description: "Through statistical analysis and COVID-19 data from every participating country, we were able to determine which policies were most effective.",
     media: { type: "image", src: "https://i.imgur.com/bxXDmAC.png" },
-    links: []
+    links: [
+      {
+        type: "github",
+        href: "https://github.com/underHA/xdhacks-covid",
+        text: "GitHub"
+      },
+      {
+        type: "youtube",
+        href: "https://www.youtube.com/watch?v=WGFpUuf27LQ",
+        text: "YouTube"
+      }]
   },
 
   {
@@ -242,7 +272,12 @@ export const project_list: ProjectData[] = [
     subtitle: "Now with 100% more base-building",
     description: "A game where you build a base and then conquer the world. Build more power plants! Build more factories! Launch more satellites!",
     media: { type: "video", src: "https://i.imgur.com/JLIBJSt.mp4" },
-    links: []
+    links: [
+      {
+        type: "youtube",
+        href: "https://www.youtube.com/watch?v=Kx-Ypq5UEbU",
+        text: "YouTube"
+      }]
   },
 
   {
@@ -250,7 +285,17 @@ export const project_list: ProjectData[] = [
     subtitle: "A game where the menu took longer than the actual game to make",
     description: `"I created most of the tools they use and I don’t know how they did that!" - "Michael "Searge" Stoyke" , Developer at Mojang AB (I don't know how we did it either)`,
     media: { type: "video", src: "https://i.imgur.com/ZXw2drv.mp4" },
-    links: []
+    links: [
+      {
+        type: "website",
+        href: "https://www.minecraft.net/en-us/article/new-realms-mirrors-and-monkeys",
+        text: "minecraft.net article"
+      },
+      {
+        type: "youtube",
+        href: "https://www.youtube.com/watch?v=eDuocGtqUes",
+        text: "YouTube"
+      }]
   },
 
   {
@@ -266,7 +311,22 @@ export const project_list: ProjectData[] = [
     subtitle: "This is funding my education",
     description: "A huge, working amusement park, available on the Minecraft Marketplace!",
     media: { type: "video", src: "https://i.imgur.com/vc8Un1u.mp4" },
-    links: []
+    links: [
+      {
+        type: "website",
+        href: "https://www.minecraft.net/en-us/marketplace/pdp?id=0626da0b-70db-44d2-a6cf-f7f1fb7641e8",
+        text: "Minecraft Marketplace"
+      },
+      {
+        type: "website",
+        href: "https://www.minecraft.net/en-us/article/new-realms-wizard-wars-and-super-high-scores",
+        text: "minecraft.net article"
+      },
+      {
+        type: "youtube",
+        href: "https://www.youtube.com/watch?v=QIHJmyk5xlQ",
+        text: "YouTube"
+      }]
   },
 
   {
@@ -274,7 +334,17 @@ export const project_list: ProjectData[] = [
     subtitle: "Mind-bending puzzle game, now with more colors!",
     description: "Paint everything, don't run out of moves. Like Gray, but with more colors.",
     media: { type: "video", src: "https://i.imgur.com/mJczvdK.mp4" },
-    links: []
+    links: [
+      {
+        type: "website",
+        href: "https://www.minecraft.net/en-us/article/new-realms-above-and-beyond",
+        text: "minecraft.net article"
+      },
+      {
+        type: "youtube",
+        href: "https://www.youtube.com/watch?v=KRC-7RF6rdQ",
+        text: "YouTube"
+      }]
   },
 
   {
@@ -282,7 +352,12 @@ export const project_list: ProjectData[] = [
     subtitle: "Mind-bending puzzle game",
     description: "Stepping on a tile changes it's color. Turn them all on to win.",
     media: { type: "video", src: "https://i.imgur.com/TrRjEvZ.mp4" },
-    links: []
+    links: [
+      {
+        type: "youtube",
+        href: "https://www.youtube.com/watch?v=tIzLTk3a1Og",
+        text: "YouTube"
+      }]
   },
 
   {
@@ -290,6 +365,16 @@ export const project_list: ProjectData[] = [
     subtitle: "Endless fun in a 3D arena",
     description: "In space, there is no up or down.",
     media: { type: "video", src: "https://i.imgur.com/jo5mT3d.mp4" },
-    links: []
+    links: [
+      {
+        type: "website",
+        href: "https://www.minecraft.net/en-us/article/new-realms-above-and-beyond",
+        text: "minecraft.net article"
+      },
+      {
+        type: "youtube",
+        href: "https://www.youtube.com/watch?v=cmMAFmht5lU",
+        text: "YouTube"
+      }]
   }
 ];
