@@ -1,7 +1,7 @@
 import MediaDisplay from "@/app/components/media_display";
 import Link from "next/link";
 
-function ExternalLink({ href, children }: { href: string, children: React.ReactNode }) {
+export function ExternalLink({ href, children }: { href: string, children: React.ReactNode }) {
   return <Link href={href} className="text-blue-300 hover:text-blue-400">{children}</Link>;
 }
 
