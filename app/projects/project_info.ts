@@ -17,6 +17,20 @@ export interface ProjectData {
 
 export const project_list: ProjectData[] = [
   {
+    title: "The Ingot Programming Language and The BlastFurnace Compiler",
+    subtitle: "Streamlining Minecraft Data Pack development by providing modern programming features.",
+    description: "Minecraft Data Pack developers have been plagued with poor and verbose syntax, barebones functionality, and expensive abstractions. This toolset aims to change that. Warning: This is in early development",
+    media: { type: "image", src: "https://i.imgur.com/jgmVqy9.png" },
+    links: [
+      {
+        type: "github",
+        href: "https://github.com/hanmindev/blastfurnace",
+        text: "BlastFurnace Compiler GitHub"
+      }
+    ],
+    blog: "https://hanmin.dev/ingot-docs/"
+  },
+  {
     title: "Lucid - Hack the North 2022 Winner",
     subtitle: "Let's turn that book into a movie. Text to movie, directed by AI.",
     description: "Paste in a text and it will identify the key scenes before turning it into a narrated movie. Favourite book, historical battle, or rant about work. Anything and everything, if you can read it, Lucid can dream it.",
@@ -37,7 +51,7 @@ export const project_list: ProjectData[] = [
         href: "https://youtu.be/9e8J4VNFXOM",
         text: "YouTube"
       }
-    ],
+    ]
   },
   {
     title: "Pitch.ai - nwHacks 2022 First Place",
@@ -60,7 +74,7 @@ export const project_list: ProjectData[] = [
         href: "https://youtu.be/j1iAbKbSlD8",
         text: "YouTube"
       }
-    ],
+    ]
   },
   {
     title: "HabiFix - Hack the 6ix 2021 Third Place",
@@ -83,7 +97,7 @@ export const project_list: ProjectData[] = [
         href: "https://youtu.be/r-5LTZLSj7Y",
         text: "YouTube"
       }
-    ],
+    ]
   },
   {
     title: "Mirrorboard",
@@ -203,7 +217,7 @@ export const project_list: ProjectData[] = [
     title: "Wave Phenomenon using Huygens–Fresnel principle",
     subtitle: "Waves are hard",
     description: "During physics class, our class had disagreements on whether Huygens' principle was correct or not. I decided to make a program to prove it.",
-    media: { type: "video", src: "https://i.imgur.com/q6GdBp6.mp4" },
+    media: { type: "video", src: "https://i.imgur.com/r7JVHlx.mp4" },
     links: []
   },
 
