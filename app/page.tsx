@@ -39,11 +39,11 @@ export default function Home() {
         <p>
           This project has been incredible; I built the initial prototype several years ago after having some
           unanswered questions in my 11th grade math class. Since then, it has been featured on <ExternalLink
-          href="https://www.pcgamer.com/this-minecraft-3d-graphing-calculator-is-hypnotic-and-beautiful/">"PC
-          Gamer"</ExternalLink>, <ExternalLink
-          href="https://www.gry-online.pl/newsroom/niezwykly-popis-kreatywnosci-w-minecraft-kalkulator-graficzny/z01d82a">"Gry-Online"</ExternalLink>, <ExternalLink
-          href="https://www.gamepressure.com/newsroom/a-remarkable-display-of-creativity-in-minecraft-graphic-calculato/z2193e">"gamepressure"</ExternalLink>, <ExternalLink
-          href="https://www.destructoid.com/minecraft-real-time-3d-graphing-calculator/">"Destructoid"</ExternalLink>, <ExternalLink
+          href="https://www.pcgamer.com/this-minecraft-3d-graphing-calculator-is-hypnotic-and-beautiful/">PC
+          Gamer</ExternalLink>, <ExternalLink
+          href="https://www.gry-online.pl/newsroom/niezwykly-popis-kreatywnosci-w-minecraft-kalkulator-graficzny/z01d82a">Gry-Online</ExternalLink>, <ExternalLink
+          href="https://www.gamepressure.com/newsroom/a-remarkable-display-of-creativity-in-minecraft-graphic-calculato/z2193e">gamepressure</ExternalLink>, <ExternalLink
+          href="https://www.destructoid.com/minecraft-real-time-3d-graphing-calculator/">Destructoid</ExternalLink>, <ExternalLink
           href="https://www.gamespark.jp/article/2022/03/09/116686.html">GameSpark</ExternalLink>, and more.
           Additionally,
           since
