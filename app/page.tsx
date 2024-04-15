@@ -1,4 +1,4 @@
-import VideoPlayer from "@/app/components/video_player";
+import MediaDisplay from "@/app/components/media_display";
 import Link from "next/link";
 
 function ExternalLink({ href, children }: { href: string, children: React.ReactNode }) {
@@ -30,7 +30,7 @@ export default function Home() {
           Minecraft 3D graphing calculator is hypnotic and beautiful</Link>
         <p>PC Gamer article by Rich Stanton</p>
         <div className="rounded-md mb-3 overflow-clip">
-          <VideoPlayer type="gfycat" video_link="https://i.imgur.com/gWPX6uJ.mp4" autoplay={true} />
+          <MediaDisplay type="gfycat" link="https://i.imgur.com/gWPX6uJ.mp4" autoplay={true} />
         </div>
         <p className="text-content2">Thank you <ExternalLink href="https://www.pcgamer.com/author/rich-stanton/">Rich
           Stanton</ExternalLink> for this wonderful article! I'm glad you enjoyed the calculator as much as I enjoyed

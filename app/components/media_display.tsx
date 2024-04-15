@@ -2,12 +2,11 @@
 
 import React, { useRef } from "react";
 import useOnScreen from "../helpers/hooks";
-import Image from "next/image";
 
-export default function VideoPlayer({ raw, type, video_link, play, autoplay }: {
+export default function MediaDisplay({ raw, type, link, play, autoplay }: {
   raw?: boolean;
   type: string;
-  video_link: string;
+  link: string;
   play?: boolean;
   autoplay?: boolean
 }) {
@@ -27,21 +26,21 @@ export default function VideoPlayer({ raw, type, video_link, play, autoplay }: {
 
   if (type === "iframe") {
     if (raw) {
-      video_link = `https://www.youtube.com/embed/${video_link}`;
+      link = `https://www.youtube.com/embed/${link}`;
     }
 
-    inner = <iframe title="Featured Video" className="w-full h-full" src={video_link} />;
+    inner = <iframe title="Featured Video" className="w-full h-full" src={link} />;
 
   } else if (type === "gfycat") {
     if (raw) {
-      video_link = `https://thumbs.gfycat.com/${video_link}-mobile.mp4`;
+      link = `https://thumbs.gfycat.com/${link}-mobile.mp4`;
     }
     inner = <video ref={video} autoPlay={autoplay} loop muted className="w-full h-full m-0">
-      <source src={video_link} type="video/mp4" />
+      <source src={link} type="video/mp4" />
     </video>;
 
   } else if (type === "image") {
-    inner = <img className="w-full h-full" src={video_link} alt={video_link} />;
+    inner = <img className="w-full h-full" src={link} alt={link} />;
   } else {
     return <p>VideoPlayer Error</p>;
   }
