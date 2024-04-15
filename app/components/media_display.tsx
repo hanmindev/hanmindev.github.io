@@ -2,8 +2,10 @@
 
 import React, { useEffect, useRef } from "react";
 import useOnScreen from "../helpers/hooks";
+import clsx from "clsx";
 
-export default function MediaDisplay({ raw, type, link, play, autoplay }: {
+export default function MediaDisplay({ className, raw, type, link, play, autoplay }: {
+  className?: string,
   raw?: boolean;
   type: string;
   link: string;
@@ -53,5 +55,5 @@ export default function MediaDisplay({ raw, type, link, play, autoplay }: {
     return <p>VideoPlayer Error</p>;
   }
 
-  return <div className="w-full h-full" ref={visibility}>{hasBeenVisible ? inner : <div className="skeleton w-full h-full"></div>}</div>;
+  return <div className={clsx("w-full h-full", className)} ref={visibility}>{hasBeenVisible ? inner : <div className="skeleton w-full h-full"></div>}</div>;
 }
