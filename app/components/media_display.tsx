@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import useOnScreen from "../helpers/hooks";
 
 export default function MediaDisplay({ raw, type, link, play, autoplay }: {
@@ -11,16 +11,24 @@ export default function MediaDisplay({ raw, type, link, play, autoplay }: {
   autoplay?: boolean
 }) {
   const video = useRef<HTMLVideoElement>(null);
+  const visibility = useRef<HTMLDivElement>(null);
+  const [hasBeenVisible, setHasBeenVisible] = React.useState(false);
 
-  const isVisible = useOnScreen(video);
+  const isVisible = useOnScreen(visibility);
 
-  if (video.current) {
-    if ((play || autoplay) && isVisible) {
-      video.current.play();
-    } else {
-      video.current.pause();
+  useEffect(() => {
+    if (isVisible) {
+      if (video.current) {
+        if (play || autoplay) {
+          video.current.play();
+        } else {
+          video.current.pause();
+        }
+      }
+
+      setHasBeenVisible(true);
     }
-  }
+  }, [autoplay, isVisible, play]);
 
   let inner;
 
@@ -45,5 +53,5 @@ export default function MediaDisplay({ raw, type, link, play, autoplay }: {
     return <p>VideoPlayer Error</p>;
   }
 
-  return inner;
+  return <div className="w-full h-full" ref={visibility}>{hasBeenVisible ? inner : <div className="skeleton w-full h-full"></div>}</div>;
 }
