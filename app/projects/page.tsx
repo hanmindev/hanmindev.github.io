@@ -53,7 +53,7 @@ function IconMap({ type, tooltip, link }: { type: ProjectLinkType, tooltip: stri
 
 function ProjectCard({ data }: { data: ProjectData }) {
   return <div className="md:w-1/2 p-2">
-    <p className="card card-image-cover w-full max-w-none transition-transform hover:scale-105">
+    <div className="card card-image-cover w-full max-w-none transition-transform hover:scale-105">
       <div className="card-body">
         <p className="card-header">{data.title}</p>
         <p className="italic">{data.subtitle}</p>
@@ -78,7 +78,7 @@ function ProjectCard({ data }: { data: ProjectData }) {
           </div>
         </div>
       </div>
-    </p>
+    </div>
   </div>;
 }
 
