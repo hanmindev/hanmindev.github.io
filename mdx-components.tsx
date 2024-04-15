@@ -12,6 +12,14 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     p: ({ children }) => <p className="text-base mt-2">{children}</p>,
     a: ({ children, href }) => <a className="text-base text-blue-500 underline" href={href}>{children}</a>,
     hr: () => <div className="divider"></div>,
+    q: ({ children }) => <blockquote className="text-base italic">{children}</blockquote>,
+    blockquote: ({ children }) => <blockquote className="text-base italic">{children}</blockquote>,
+    ul: ({ children }) => <ul className="list-disc list-inside">{children}</ul>,
+    ol: ({ children }) => <ol className="list-decimal list-inside">{children}</ol>,
+    li: ({ children }) => <li className="text-base">{children}</li>,
+    code: ({ children }) => <code className="text-sm bg-gray-100 p-1 rounded">{children}</code>,
+    inlineCode: ({ children }) => <code className="text-sm bg-gray-100 p-1 rounded">{children}</code>,
+
     ...components
   };
 }

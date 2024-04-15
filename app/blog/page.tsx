@@ -25,7 +25,7 @@ function BlogCardWrapper({ metadata, link }: { metadata: BlogMeta, link: string 
 
 // I really don't like this, but I can't think of a better static way to do this
 import { meta as uoft_cs } from "@/app/blog/uoft-cs-guide/page.mdx";
-// import { meta as m1 } from "@/app/blog/mirrorboard/page.mdx";
+import { meta as mirrorboard } from "@/app/blog/mirrorboard/page.mdx";
 // import { meta as m2 } from "@/app/blog/split-keyboard/page.mdx";
 import { meta as mcmv } from "@/app/blog/mcmv/page.mdx";
 import { meta as graphing } from "@/app/blog/3d-graphing-minecraft/page.mdx";
@@ -38,7 +38,7 @@ export default function Home() {
     <div className="divider"></div>
     <BlogList>
       <BlogCardWrapper metadata={uoft_cs} link="/blog/uoft-cs-guide" />
-      {/*<BlogCardWrapper metadata={m1} link="/blog/mirrorboard" />*/}
+      <BlogCardWrapper metadata={mirrorboard} link="/blog/mirrorboard" />
       {/*<BlogCardWrapper metadata={m2} link="/blog/split-keyboard" />*/}
       <BlogCardWrapper metadata={graphing} link="/blog/3d-graphing-minecraft" />
       <BlogCardWrapper metadata={mcmv} link="/blog/mcmv" />

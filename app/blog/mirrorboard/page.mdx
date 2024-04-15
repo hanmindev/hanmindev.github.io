@@ -1,6 +1,98 @@
+import MediaDisplay from "@/app/components/media_display";
 export const meta = {
   title: "How I type 80 WPM using One Hand",
   description: "I didn't like how I had to switch between my mouse and keyboard so often, so I decided to create a one-handed typing layout. Now I can brush my teeth while programming!"
 }
 
 # How I type 80 WPM using One Hand
+"Your left hand faster than both my hands" - friend
+
+----
+
+<div className="relative" style={{ paddingBottom: "56.25%" }}>
+  <MediaDisplay className="absolute p-4" link="https://www.youtube.com/embed/L4qHOcTEYSc" type="iframe" autoplay />
+</div>
+
+*Demonstration video of using Mirrorboard.*
+
+## Introduction
+
+People always look at me confused when they find out I can type with one hand so fast. By far, the most common question I get is: Why?
+
+Most people have never had the need to type properly with one hand. If they need to type with one hand, they can by looking at the keyboard and pressing all the buttons with one hand. Slow, but it works.
+
+However, this is much inferior to my layout as doing this is slow, and you actually need to look at your keyboard. My layout allows people to type quickly, and without looking at their keyboard.
+
+So how does it work?
+
+In essence, when you press the Caps Lock key, it mirrors the keyboard. So for example, if you type "qwert", it would come out as "poiuy".
+
+A benefit to this approach is that you as long as you don't press the Caps Lock key, your keyboard functions as normal, meaning that unlike using other layouts like Dvorak Left Handed, you won't forget how to use a normal QWERTY keyboard, and other people will actually be able to use your keyboard.
+
+## Uses
+
+I still haven't answered *why?* Why does someone need to type at 80wpm with one hand? This is one of those things that you can't really appreciate until you've mastered it. The applications aren't obvious, but once you're comfortable using it, you'll find that you can't live without it.
+
+A few examples of what I use it for:
+
+1. Typing short strings without moving my hand off the mouse. Think links, search queries, short chat messages, etc.
+2. Interacting with the computer while doing something else. Eating, brushing my teeth, calling someone, soldering, etc.
+3. Holding a laptop or keyboard with one hand while typing with the other. Can be super useful if you're on the go and need to do something quickly but don't have somewhere to sit down. [Like this but unironically.](https://www.dreamstime.com/young-man-laptop-white-background-image153306931)
+4. Typing notes with my left hand, while annotating them with my right hand. My handwriting is atrocious, so I need to type my notes, but I often need to draw diagrams or write equations.
+
+The first point is huge, as so many programs require excessive switching between the mouse and keyboard. It would be nice every application supported Vim keybindings, but that's not the case. We live in a world where for a lot of applications, keyboard navigation is vastly inferior to mouse navigation, so this layout can be a huge time saver.
+
+The second point may seem quite niche, but let me ask you something: what if you couldn't use your phone unless you were using both hands? What if you couldn't quickly text someone a short message, or search up a short query without forcing your other hand to put down whatever it was doing, and help use the device? It would get annoying quite quickly. This is how I feel when I access a computer without the Mirrorboard layout. The number of times I had to use a device that isn't mine, and instinctively tried to use mirrorboard because my other hand was on my phone to access 2FA codes, or to send a file to that device, is too many to count.
+
+## Design Decisions
+
+There are a few design decisions I made while making this layout. Mirrorboard was designed with the following goals in mind:
+
+* Be as similar to QWERTY as possible to reduce the learning curve
+* Be a superset of QWERTY so going back to using normal keyboards is easy
+* Be usable with one hand, either left or right
+* Allow easy access of all keys with one hand
+
+Additionally, my implementation comes with a few extra features:
+* You can use mirrorboard with two hands, and the mirror button will provide access to keys that are difficult-to-use, or not available at all on certain keyboards (e.g. arrow keys, home/end/pgup/pgdown, numpad, etc).
+* Mouse control
+
+## Limitations
+
+There are unfortunately a few limitations to this layout:
+
+* The caps lock key is repurposed as the mirror button, so it cannot be used for its original purpose. I personally never use the caps lock button so it was an easy trade-off, but your situation may be different.
+* There isn't a good key on the right side of the keyboard to use as a mirror button, so the right-handed mirrorboard experience is vastly inferior. However, on custom keyboards that are symmetrical such as the Dactyl Manuform, this is not an issue and works great.
+* Because the caps lock key has to be used quite frequently during input of normal words, typing with mirrorboard is slightly less efficient than other one-handed layouts without modifier keys.
+* Because the caps lock key must be pressed frequently with your pinky, which is not a strong finger, there may be risks of RSI. On my daily driver keyboard I had to swap out my heavier 62g spring switches with a lighter one on my pinky because it was causing problems.
+* The learning curve is **very high**, although I believe it should be easier than many other one-handed layouts which change the keyboard completely.
+
+## Learning Curve
+
+Although I had mirrorboard installed on my keyboard for longer, I only started to use it properly on March 1, 2021. On that day, I covered the right side of my keyboard to force myself to use mirrorboard.
+
+Here is my progress:
+
+![](https://i.imgur.com/pZ2ConE.png)
+
+Note that there are a lot of data points missing because I didn't record them, and I didn't practice consistently so there may be random increases in the data.
+
+You can see that in about a month, I was able to reach 40WPM, which I think is the minimum "usable" WPM. However, I've been stuck at 80WPM for a year and I don't think it's going to go up significantly anymore.
+
+For reference, my peak WPM with both hands is 140, so using one hand gets me to 57% of my peak speed.
+
+## Why did I make this again?
+
+I've been a fan of alternative keyboard layouts for a long time. During high school, I picked up Dvorak, attaining 80WPM, which was pretty close to my 100WPM record on QWERTY at the time. However, Dvorak, and many other layouts have a huge issue which is that because they deviate so much from the standard layouts, if you don't switch back and forth regularly, you'll forget how to use the other layout.
+
+I experienced this first-hand when I had to use the library computer to print something. Your brain rewires things so quickly that even though it hasn't even been that long since I last used QWERTY, I had to stand there for a good five minutes to enter my password, typing like a tech illiterate grandmother.
+
+This became a common trend. To make matters worse, a lot of programs don't support Dvorak well, so you either have to rebind all your keys, or sometimes be unable to use it properly because they don't let you rebind things. Additionally, because the keys are moved around, a lot of shortcuts don't work anymore. Most useful shortcuts on QWERTY can be accessed using only the left hand, but with Dvorak, Ctrl C + V becomes a two-handed task. Some people suggest adding macros so move your keys to the standard QWERTY layout when you hold down Ctrl, but now instead of Ctrl C you have to remember Ctrl... J? which becomes frustrating especially if you are using unfamiliar software.
+
+This was too frustrating to me and I eventually gave up on Dvorak.
+
+It was around this time I became interested in one-handed keyboard layouts. Sure, there were layouts like left-handed Dvorak, but I wanted it to be as similar to QWERTY as possible for the aforementioned reasons.
+
+I thought of repurposing the caps lock button as a mirror button, so you would always be using QWERTY until you needed to switch to one-handed mode.
+
+Of course, because all good original ideas have been taken, turns out this has been done before. So I stole the name from this [xkcd blog](https://blog.xkcd.com/2007/08/14/mirrorboard-a-one-handed-keyboard-layout-for-the-lazy/) by Randall.
