@@ -29,7 +29,9 @@ export default function Home() {
               href="https://www.pcgamer.com/this-minecraft-3d-graphing-calculator-is-hypnotic-and-beautiful/">This
           Minecraft 3D graphing calculator is hypnotic and beautiful</Link>
         <p>PC Gamer article by Rich Stanton</p>
-        <VideoPlayer type="gfycat" video_link="https://i.imgur.com/gWPX6uJ.mp4" autoplay={true} />
+        <div className="rounded-md mb-3 overflow-clip">
+          <VideoPlayer type="gfycat" video_link="https://i.imgur.com/gWPX6uJ.mp4" autoplay={true} />
+        </div>
         <p className="text-content2">Thank you <ExternalLink href="https://www.pcgamer.com/author/rich-stanton/">Rich
           Stanton</ExternalLink> for this wonderful article! I'm glad you enjoyed the calculator as much as I enjoyed
           making it.</p>

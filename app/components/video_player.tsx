@@ -41,14 +41,10 @@ export default function VideoPlayer({ raw, type, video_link, play, autoplay }: {
     </video>;
 
   } else if (type === "image") {
-    inner = <Image className="w-full h-full" src={video_link} alt={video_link} />;
+    inner = <img className="w-full h-full" src={video_link} alt={video_link} />;
   } else {
     return <p>VideoPlayer Error</p>;
   }
 
-  return (
-    <div className="rounded-md mb-3 overflow-clip">
-      {inner}
-    </div>
-  );
+  return inner;
 }
