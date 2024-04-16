@@ -53,7 +53,7 @@ function IconMap({ type, tooltip, link }: { type: ProjectLinkType, tooltip: stri
 
 function ProjectCard({ data }: { data: ProjectData }) {
   return <div className="md:w-1/2 p-2">
-    <div className="card card-image-cover w-full max-w-none transition-transform hover:scale-105">
+    <div className="card card-image-cover w-full max-w-none transition-transform hover:scale-105 overflow-x-clip">
       <div className="card-body">
         <p className="card-header">{data.title}</p>
         <p className="italic">{data.subtitle}</p>
@@ -73,7 +73,7 @@ function ProjectCard({ data }: { data: ProjectData }) {
               : undefined}
           </div>
 
-          <div className="flex space-x-1 justify-end overflow-x-clip">
+          <div className="flex space-x-1 justify-end">
             {data.links.map((link, i) => <IconMap key={i} type={link.type} tooltip={link.text} link={link.href} />)}
           </div>
         </div>
