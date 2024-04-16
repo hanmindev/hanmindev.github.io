@@ -15,9 +15,13 @@ Get rich quick!
 
 *Demonstration and Explanation Video of the Minecraft Bitcoin Miner*
 
+## Introduction
+
 I've always heard jokes about mining Bitcoin in Minecraft. After all, what is Minecraft if not a game about mining? However, I had no idea how to actually hook up programs to the Bitcoin network, so I never thought about actually implementing it.
 
 ...That was until I saw someone write a [Bitcoin miner for the Game Boy](https://www.youtube.com/watch?v=4ckjr9x214c). I saw that they used a fork of [ntgbtminer](https://github.com/vsergeev/ntgbtminer), a CPU Bitcoin Miner, which was perfect for my purposes.
+
+## Implementation
 
 With ntgbtminer connecting to the Bitcoin network and getting the information, I could work on creating the miner in Minecraft. The good thing is that to mine Bitcoin, you essentially just need a SHA256 function.
 
@@ -26,6 +30,8 @@ With ntgbtminer connecting to the Bitcoin network and getting the information, I
 It didn't help that I was writing it in Minecraft's .mcfunction format which does not have a debugger. I actually became so frustrated that I wrote the SHA256 function in C++ then used it to check that the Minecraft counterpart was correct. After a lot of trial and error, it was complete.
 
 The rest was quite simple; have my fork of ntgbtminer running on Python fetch the Bitcoin network information, then send it to Minecraft. Minecraft would then run the SHA256 function, and if it was correct, it would send the information back to Python, which would then send it to ntgbtminer, which would then send it to the Bitcoin network. If it was incorrect, Minecraft would try a different nonce. This process would repeat until a block was found.
+
+## Result
 
 Coming at about 1.11 hashes per second, I was destined to get one bitcoin in a hundred million years. Considering that GPUs are super expensive and I already had a Minecraft account and a computer, I think it's a pretty good deal.
 
