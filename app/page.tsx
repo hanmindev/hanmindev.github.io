@@ -1,8 +1,16 @@
 import MediaDisplay from "@/app/components/media_display";
 import Link from "next/link";
+import clsx from "clsx";
 
-export function ExternalLink({ href, children }: { href: string, children: React.ReactNode }) {
-  return <Link href={href} className="text-blue-300 hover:text-blue-400">{children}</Link>;
+export function ExternalLink({ className, href, children }: {
+  className?: string,
+  href: string | undefined,
+  children: React.ReactNode
+}) {
+  href = href ? href : ""
+
+  return <Link href={href}
+               className={clsx("text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500 underline", className)}>{children}</Link>;
 }
 
 export default function Home() {
@@ -25,9 +33,9 @@ export default function Home() {
 
     <div className="card card-image-cover max-w-full my-4">
       <div className="card-body">
-        <Link className="card-header text-blue-300 hover:text-blue-400"
-              href="https://www.pcgamer.com/this-minecraft-3d-graphing-calculator-is-hypnotic-and-beautiful/">This
-          Minecraft 3D graphing calculator is hypnotic and beautiful</Link>
+        <ExternalLink className="card-header"
+                      href="https://www.pcgamer.com/this-minecraft-3d-graphing-calculator-is-hypnotic-and-beautiful/">This
+          Minecraft 3D graphing calculator is hypnotic and beautiful</ExternalLink>
         <p>PC Gamer article by Rich Stanton</p>
         <div className="rounded-md mb-3 overflow-clip">
           <MediaDisplay type="gfycat" link="https://i.imgur.com/gWPX6uJ.mp4" autoplay={true} />

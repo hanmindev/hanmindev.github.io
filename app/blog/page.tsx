@@ -5,8 +5,8 @@ import { BlogMeta } from "@/app/blog/*/page.mdx";
 function BlogCard({ title, description, link }: { title: string, description: string, link: string }) {
   return <div className="group card max-w-full transition-transform duration-100 hover:scale-105">
     <Link className="card-body" href={link}>
-      <h2 className="card-header group-hover:text-blue-300">{title}</h2>
-      <p className="text-content2 group-hover:text-blue-300">{description}</p>
+      <h2 className="card-header group-hover:text-blue-500 dark:group-hover:text-blue-300">{title}</h2>
+      <p className="text-content2 group-hover:text-blue-500 dark:group-hover:text-blue-300">{description}</p>
     </Link>
   </div>;
 }
