@@ -73,7 +73,7 @@ function ProjectCard({ data }: { data: ProjectData }) {
               : undefined}
           </div>
 
-          <div className="flex space-x-1 justify-end">
+          <div className="flex space-x-1 justify-end overflow-x-clip">
             {data.links.map((link, i) => <IconMap key={i} type={link.type} tooltip={link.text} link={link.href} />)}
           </div>
         </div>
