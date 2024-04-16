@@ -28,7 +28,7 @@ export default function RootLayout({
         </div>
       </main>
       <div className="divider"></div>
-      <div className="text-sm text-center mb-8 pb-16 xl:pb-0">
+      <div className="text-sm text-center mb-8 pb-16 px-4 xl:pb-0">
         This work by <ExternalLink href="https://hanmin.dev/">Hanmin Kim</ExternalLink> is licensed under
         a <ExternalLink href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike
         4.0 International License</ExternalLink>. Copyright 2024 Hanmin Kim.
