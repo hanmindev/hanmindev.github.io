@@ -1,6 +1,6 @@
 import type { MDXComponents } from "mdx/types";
 import React from "react";
-import { ExternalLink } from "@/app/page";
+import { ExternalLink } from "@/app/components/external_link";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
