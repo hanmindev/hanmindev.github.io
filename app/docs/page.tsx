@@ -1,4 +1,10 @@
 import { Card, CardList } from "@/app/components/card_list";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Hanmin Kim",
+  description: "Docs"
+};
 
 export default function Home() {
   return <>

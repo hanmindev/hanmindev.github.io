@@ -1,6 +1,11 @@
 import { BlogMeta } from "@/app/blog/*/page.mdx";
 import { Card, CardList } from "@/app/components/card_list";
 
+export const metadata: Metadata = {
+  title: "Hanmin Kim",
+  description: "Blogs"
+};
+
 function BlogCardWrapper({ metadata, link }: { metadata: BlogMeta, link: string }) {
   const { title, description } = metadata;
 
@@ -15,6 +20,7 @@ import { metadata as split_keyboard } from "@/app/blog/split-keyboard/page.mdx";
 import { metadata as mcmv } from "@/app/blog/mcmv/page.mdx";
 import { metadata as graphing } from "@/app/blog/3d-graphing-minecraft/page.mdx";
 import { metadata as btc } from "@/app/blog/minecraft-bitcoin/page.mdx";
+import { Metadata } from "next";
 
 export default function Home() {
   return <>
