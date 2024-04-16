@@ -1,5 +1,6 @@
 import type { MDXComponents } from "mdx/types";
 import React from "react";
+import { ExternalLink } from "@/app/page";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -10,7 +11,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h5: ({ children }) => <h5 className="text-lg font-semibold mt-4">{children}</h5>,
     h6: ({ children }) => <h6 className="text-base font-semibold mt-4">{children}</h6>,
     p: ({ children }) => <p className="text-base mt-2">{children}</p>,
-    a: ({ children, href }) => <a className="text-base text-blue-500 underline" href={href}>{children}</a>,
+    a: ({ children, href }) => <ExternalLink className="text-base" href={href}>{children}</ExternalLink>,
     hr: () => <div className="divider"></div>,
     q: ({ children }) => <blockquote className="text-base italic">{children}</blockquote>,
     blockquote: ({ children }) => <blockquote className="text-base italic">{children}</blockquote>,
