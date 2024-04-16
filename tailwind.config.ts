@@ -16,6 +16,9 @@ const config: Config = {
       }
     }
   },
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   fontFamily: {
     karla: ["Karla", "sans"]
   },
