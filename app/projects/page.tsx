@@ -10,6 +10,12 @@ import {
   YouTubeIcon
 } from "@/app/components/icons/buttons";
 import { project_list, ProjectData, ProjectLinkType } from "@/app/projects/project_info";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Hanmin Kim",
+  description: "Project Gallery"
+};
 
 function IconMap({ type, tooltip, link }: { type: ProjectLinkType, tooltip: string, link: string }) {
   let icon;

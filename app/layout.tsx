@@ -8,8 +8,8 @@ import { ExternalLink } from "@/app/components/external_link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hanmin's Website",
-  description: "Check out my work!"
+  title: "Hanmin Kim",
+  description: "UofT Computer Science"
 };
 
 export default function RootLayout({

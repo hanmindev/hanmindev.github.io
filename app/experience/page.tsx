@@ -1,6 +1,12 @@
 import Image, { StaticImageData } from "next/image";
 import RobloxLogo from "../../public/company_logos/roblox.jpg";
 import GraycoreLogo from "../../public/company_logos/graycore.jpg";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Hanmin Kim",
+  description: "Experience History"
+};
 
 function ExpNode({ src, title, company, duration, location, description }: {
   src: StaticImageData,
