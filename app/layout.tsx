@@ -38,7 +38,7 @@ export default function RootLayout({
     </div>
     </body>
 
-    <Script defer src="https://analytics.us.umami.is/script.js"
+    <Script defer src="/script.js"
             data-website-id="520f947d-3042-4cbd-9e02-b124b545be03"></Script>
     </html>
   );
