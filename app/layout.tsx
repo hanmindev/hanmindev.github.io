@@ -38,8 +38,8 @@ export default function RootLayout({
     </div>
     </body>
 
-    <Script defer src="/script.js"
-            data-website-id="520f947d-3042-4cbd-9e02-b124b545be03"></Script>
+    {process.env.NODE_ENV == "production" ? <Script defer src="/script.js"
+                                                    data-website-id="520f947d-3042-4cbd-9e02-b124b545be03"></Script> : <></>}
     </html>
   );
 }
