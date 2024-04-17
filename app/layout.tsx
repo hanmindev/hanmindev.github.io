@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/app/components/header";
 import { Footer } from "@/app/components/footer";
 import { ExternalLink } from "@/app/components/external_link";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,9 @@ export default function RootLayout({
       <Footer />
     </div>
     </body>
+
+    <Script defer src="https://analytics.us.umami.is/script.js"
+            data-website-id="520f947d-3042-4cbd-9e02-b124b545be03"></Script>
     </html>
   );
 }
