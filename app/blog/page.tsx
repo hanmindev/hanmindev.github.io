@@ -13,6 +13,7 @@ function BlogCardWrapper({ metadata, link }: { metadata: BlogMeta, link: string 
 }
 
 // I really don't like this, but I can't think of a better static way to do this
+import { metadata as distraction } from "@/app/blog/distraction-free-guide/page.mdx";
 import { metadata as uoft_cs } from "@/app/blog/uoft-cs-guide/page.mdx";
 import { metadata as interview } from "@/app/blog/cs-interview-guide/page.mdx";
 import { metadata as mirrorboard } from "@/app/blog/mirrorboard/page.mdx";
@@ -28,6 +29,7 @@ export default function Home() {
     <p>Random writeups.</p>
     <div className="divider"></div>
     <CardList>
+      <BlogCardWrapper metadata={distraction} link="/blog/distraction-free-guide" />
       <BlogCardWrapper metadata={uoft_cs} link="/blog/uoft-cs-guide" />
       <BlogCardWrapper metadata={interview} link="/blog/cs-interview-guide" />
       <BlogCardWrapper metadata={mirrorboard} link="/blog/mirrorboard" />
