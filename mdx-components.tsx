@@ -47,7 +47,7 @@ function LinkableHeader({ header_val, children }: { header_val: 1 | 2 | 3 | 4 | 
   } else {
     return <span id={section_name} className="scroll-m-24 flex mt-8 items-center space-x-2 group">
       {header}
-      <CopyButton className="opacity-0 group-hover:opacity-100 transition-opacity hover:cursor-pointer"
+      <CopyButton className="opacity-0 group-hover:opacity-100 transition-opacity hover:cursor-pointer pt-1"
                   copy_value={"#" + section_name}
                   prepend_link enter_link>
         <CopyLinkIcon />
