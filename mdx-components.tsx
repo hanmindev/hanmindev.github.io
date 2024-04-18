@@ -14,46 +14,44 @@ export function headerNameToSectionName(header_val: 1 | 2 | 3 | 4 | 5 | 6, heade
 
 function LinkableHeader({ header_val, children }: { header_val: 1 | 2 | 3 | 4 | 5 | 6, children: React.ReactNode }) {
   let section_name = headerNameToSectionName(header_val, children);
+  let link_to_section = section_name == "" ? "" : "#" + section_name;
 
   let header;
   switch (header_val) {
     case 1:
-      return <h1 id={section_name}
-                 className="scroll-mt-24 text-4xl font-bold mt-4">{children}</h1>;
+      header = <h1 id={section_name}
+                   className="text-4xl font-bold">{children}</h1>;
+      break;
     case 2:
       header = <h2
-        className="text-4xl font-semibold">{children}</h2>;
+        className="text-4xl font-semibold pt-4">{children}</h2>;
       break;
     case 3:
       header = <h3
-        className="text-3xl font-semibold">{children}</h3>;
+        className="text-3xl font-semibold pt-8">{children}</h3>;
       break;
     case 4:
       header = <h4
-        className="text-2xl font-semibold">{children}</h4>;
+        className="text-2xl font-semibold pt-8">{children}</h4>;
       break;
     case 5:
       header = <h5
-        className="text-xl font-semibold">{children}</h5>;
+        className="text-xl font-semibold pt-8">{children}</h5>;
       break;
     case 6:
       header = <h6
-        className="text-lg font-semibold">{children}</h6>;
+        className="text-lg font-semibold pt-8">{children}</h6>;
       break;
   }
 
-  if (section_name == "") {
-    return header;
-  } else {
-    return <span id={section_name} className="scroll-m-24 flex mt-8 items-center space-x-2 group">
-      {header}
-      <CopyButton className="opacity-0 group-hover:opacity-100 transition-opacity hover:cursor-pointer pt-1"
-                  copy_value={"#" + section_name}
-                  prepend_link enter_link>
-        <CopyLinkIcon />
-      </CopyButton>
-    </span>;
-  }
+  return <div id={section_name} className="scroll-m-24 flex items-center space-x-2 group">
+    {header}
+    <CopyButton className="opacity-0 group-hover:opacity-100 transition-opacity hover:cursor-pointer pt-5"
+                copy_value={link_to_section}
+                prepend_link enter_link>
+      <CopyLinkIcon />
+    </CopyButton>
+  </div>;
 }
 
 
