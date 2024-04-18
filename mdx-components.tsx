@@ -3,6 +3,7 @@ import React from "react";
 import { ExternalLink } from "@/app/components/external_link";
 import { CopyLinkIcon } from "@/app/components/icons/buttons";
 import { CopyButton } from "@/app/components/copy_button";
+import clsx from "clsx";
 
 export function headerNameToSectionName(header_val: 1 | 2 | 3 | 4 | 5 | 6, header_name: any): string {
   if (typeof header_name != "string" || header_val == 1) {
@@ -22,36 +23,36 @@ function LinkableHeader({ header_val, children }: { header_val: 1 | 2 | 3 | 4 | 
     case 1:
       header = <h1 id={section_name}
                    className="text-4xl font-bold">{children}</h1>;
-      pt = 0;
+      pt = "pt-0";
       break;
     case 2:
       header = <h2
         className="text-4xl font-semibold">{children}</h2>;
-      pt = 4;
+      pt = "pt-4";
       break;
     case 3:
       header = <h3
         className="text-3xl font-semibold">{children}</h3>;
-      pt = 8;
+      pt = "pt-8";
       break;
     case 4:
       header = <h4
         className="text-2xl font-semibold">{children}</h4>;
-      pt = 8;
+      pt = "pt-8";
       break;
     case 5:
       header = <h5
         className="text-xl font-semibold">{children}</h5>;
-      pt = 8;
+      pt = "pt-8";
       break;
     case 6:
       header = <h6
         className="text-lg font-semibold">{children}</h6>;
-      pt = 8;
+      pt = "pt-8";
       break;
   }
 
-  return <div id={section_name} className={`scroll-m-24 flex items-center space-x-2 group pt-${pt}`}>
+  return <div id={section_name} className={clsx("scroll-m-24 flex items-center space-x-2 group", pt)}>
     {header}
     <CopyButton className="opacity-0 group-hover:opacity-100 transition-opacity hover:cursor-pointer pt-1"
                 copy_value={link_to_section}
