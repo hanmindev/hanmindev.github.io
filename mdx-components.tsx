@@ -22,23 +22,23 @@ function LinkableHeader({ header_val, children }: { header_val: 1 | 2 | 3 | 4 | 
                  className="scroll-mt-24 text-4xl font-bold mt-4">{children}</h1>;
     case 2:
       header = <h2
-        className="text-3xl font-semibold">{children}</h2>;
+        className="text-4xl font-semibold">{children}</h2>;
       break;
     case 3:
       header = <h3
-        className="text-2xl font-semibold">{children}</h3>;
+        className="text-3xl font-semibold">{children}</h3>;
       break;
     case 4:
       header = <h4
-        className="text-xl font-semibold">{children}</h4>;
+        className="text-2xl font-semibold">{children}</h4>;
       break;
     case 5:
       header = <h5
-        className="text-lg font-semibold">{children}</h5>;
+        className="text-xl font-semibold">{children}</h5>;
       break;
     case 6:
       header = <h6
-        className="text-base font-semibold">{children}</h6>;
+        className="text-lg font-semibold">{children}</h6>;
       break;
   }
 
