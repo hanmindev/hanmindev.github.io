@@ -17,36 +17,43 @@ function LinkableHeader({ header_val, children }: { header_val: 1 | 2 | 3 | 4 | 
   let link_to_section = section_name == "" ? "" : "#" + section_name;
 
   let header;
+  let pt;
   switch (header_val) {
     case 1:
       header = <h1 id={section_name}
                    className="text-4xl font-bold">{children}</h1>;
+      pt = 0;
       break;
     case 2:
       header = <h2
-        className="text-4xl font-semibold pt-4">{children}</h2>;
+        className="text-4xl font-semibold">{children}</h2>;
+      pt = 4;
       break;
     case 3:
       header = <h3
-        className="text-3xl font-semibold pt-8">{children}</h3>;
+        className="text-3xl font-semibold">{children}</h3>;
+      pt = 8;
       break;
     case 4:
       header = <h4
-        className="text-2xl font-semibold pt-8">{children}</h4>;
+        className="text-2xl font-semibold">{children}</h4>;
+      pt = 8;
       break;
     case 5:
       header = <h5
-        className="text-xl font-semibold pt-8">{children}</h5>;
+        className="text-xl font-semibold">{children}</h5>;
+      pt = 8;
       break;
     case 6:
       header = <h6
-        className="text-lg font-semibold pt-8">{children}</h6>;
+        className="text-lg font-semibold">{children}</h6>;
+      pt = 8;
       break;
   }
 
-  return <div id={section_name} className="scroll-m-24 flex items-center space-x-2 group">
+  return <div id={section_name} className={`scroll-m-24 flex items-center space-x-2 group pt-${pt}`}>
     {header}
-    <CopyButton className="opacity-0 group-hover:opacity-100 transition-opacity hover:cursor-pointer pt-5"
+    <CopyButton className="opacity-0 group-hover:opacity-100 transition-opacity hover:cursor-pointer pt-1"
                 copy_value={link_to_section}
                 prepend_link enter_link>
       <CopyLinkIcon />
