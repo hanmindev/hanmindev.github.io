@@ -9,9 +9,10 @@ export function CopyButton({ className, children, copy_value, prepend_link, ente
   prepend_link?: boolean
   enter_link?: boolean
 }) {
-  if (prepend_link) copy_value = window.location.origin + window.location.pathname + copy_value;
+  let fixed_value = copy_value;
   const copy_fn = () => {
-    navigator.clipboard.writeText(copy_value);
+    if (prepend_link) fixed_value = window.location.origin + window.location.pathname + copy_value;
+    navigator.clipboard.writeText(fixed_value);
   };
 
 
