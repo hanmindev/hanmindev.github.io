@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import clsx from "clsx";
 
 export function TopButton() {
-  const [isScrolled, setScrolled] = useState(true);
+  const [isScrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const scrollListener = () => setScrolled(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20);
