@@ -5,6 +5,7 @@ import { Header } from "@/app/components/header";
 import { Footer } from "@/app/components/footer";
 import { ExternalLink } from "@/app/components/external_link";
 import Script from "next/script";
+import { TopButton } from "@/app/components/top_button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,12 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
     <body className={inter.className}>
     <div className="absolute flex flex-col w-full">
       <Header />
       <main className="flex min-h-svh flex-col items-center justify-between pt-24 px-8">
-        <div className="z-10 w-full max-w-screen-lg items-center justify-between font-karla">
+        <div className="z-10 w-full max-w-screen-lg items-center justify-between font-karla relative">
+          <TopButton />
           {children}
         </div>
       </main>
