@@ -76,7 +76,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     hr: () => <div className="divider"></div>,
     q: ({ children }) => <blockquote className="text-base italic">{children}</blockquote>,
     blockquote: ({ children }) => <blockquote className="text-base italic">{children}</blockquote>,
-    ul: ({ children }) => <ul className="list-disc list-inside">{children}</ul>,
+    ul: ({ children }) => <ul className="list-disc list-inside pl-4">{children}</ul>,
     ol: ({ children }) => <ol className="list-decimal list-inside">{children}</ol>,
     li: ({ children }) => <li className="text-sm my-1">{children}</li>,
     code: ({ children }) => <code className="text-sm bg-gray-100 p-1 rounded">{children}</code>,
