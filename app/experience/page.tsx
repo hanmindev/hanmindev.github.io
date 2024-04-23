@@ -48,7 +48,7 @@ export default function Home() {
                description="I'll be joining Roblox this summer!" />
       <ExpNode src={GraycoreLogo} title="Software Engineering Intern" company="Graycore"
                duration="May 2023 - August 2023"
-               description="I did a variety of tasks, such as integrating Nx into our Angular monorepo CI pipeline, creating a custom systems integration to transform and update information between enterprise systems, and buitl a system to automatically track and synchronize data using a custom Hubspot public app and Azure Functions." />
+               description="I did a variety of tasks, such as integrating Nx into our Angular monorepo CI pipeline, creating a custom systems integration to transform and update information between enterprise systems, and built a system to automatically track and synchronize data using a custom Hubspot public app and Azure Functions." />
       <ExpNode src={NorvaleLogo} title="Software Developer" company="Norvale"
                duration="August 2018 - December 2022"
                description="I worked with Norvale for many years (even longer if you consider the projects I worked on with them before they were a company!). I was the main developer for several projects where I programmed the game logic, UI, physics engines, and more, which would make their way into Microsoft's Minecraft Marketplace." />
