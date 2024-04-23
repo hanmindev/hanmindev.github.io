@@ -6,5 +6,6 @@ module.exports = withMDX({
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   images: {
     unoptimized: true
-  }
+  },
+  trailingSlash: true
 });
