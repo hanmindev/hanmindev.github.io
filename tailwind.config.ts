@@ -22,6 +22,6 @@ const config: Config = {
   fontFamily: {
     karla: ["Karla", "sans"]
   },
-  plugins: [require("rippleui")]
+  plugins: [require('@tailwindcss/typography'), require("rippleui")]
 };
 export default config;
