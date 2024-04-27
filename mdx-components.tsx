@@ -27,22 +27,22 @@ function LinkableHeader({ header_val, children }: { header_val: 1 | 2 | 3 | 4 | 
       break;
     case 2:
       header = <h2
-        className="text-4xl font-semibold">{children}</h2>;
+        className="mb-1 text-4xl font-black">{children}</h2>;
       pt = "pt-4";
       break;
     case 3:
       header = <h3
-        className="text-3xl font-semibold">{children}</h3>;
+        className="font-black text-2xl font-bold">{children}</h3>;
       pt = "pt-8";
       break;
     case 4:
       header = <h4
-        className="text-2xl font-semibold">{children}</h4>;
+        className="text-2xl font-bold">{children}</h4>;
       pt = "pt-8";
       break;
     case 5:
       header = <h5
-        className="text-xl font-semibold">{children}</h5>;
+        className="italic text-xl font-semibold">{children}</h5>;
       pt = "pt-8";
       break;
     case 6:
@@ -65,20 +65,20 @@ function LinkableHeader({ header_val, children }: { header_val: 1 | 2 | 3 | 4 | 
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
-    h1: ({ children }) => <LinkableHeader header_val={1}>{children}</LinkableHeader>,
+    h1: ({ children }) => <LinkableHeader  header_val={1}>{children}</LinkableHeader>,
     h2: ({ children }) => <LinkableHeader header_val={2}>{children}</LinkableHeader>,
     h3: ({ children }) => <LinkableHeader header_val={3}>{children}</LinkableHeader>,
     h4: ({ children }) => <LinkableHeader header_val={4}>{children}</LinkableHeader>,
     h5: ({ children }) => <LinkableHeader header_val={5}>{children}</LinkableHeader>,
     h6: ({ children }) => <LinkableHeader header_val={6}>{children}</LinkableHeader>,
-    p: ({ children }) => <p className="text-sm my-1">{children}</p>,
-    a: ({ children, href }) => <ExternalLink className="text-sm my-1" href={href}>{children}</ExternalLink>,
+    p: ({ children }) => <p className="text-base leading-relaxed my-1">{children}</p>,
+    a: ({ children, href }) => <ExternalLink className="text-base my-1" href={href}>{children}</ExternalLink>,
     hr: () => <div className="divider"></div>,
     q: ({ children }) => <blockquote className="text-base italic">{children}</blockquote>,
     blockquote: ({ children }) => <blockquote className="text-base italic">{children}</blockquote>,
-    ul: ({ children }) => <ul className="list-disc list-inside pl-4">{children}</ul>,
-    ol: ({ children }) => <ol className="list-decimal list-inside">{children}</ol>,
-    li: ({ children }) => <li className="text-sm my-1">{children}</li>,
+    ul: ({ children }) => <ul className="list-disc list-inside pl-2">{children}</ul>,
+    ol: ({ children }) => <ol className="list-decimal list-inside pl-4">{children}</ol>,
+    li: ({ children }) => <li className="my-2 text-gray-50 md:list-outside">{children}</li>,
     code: ({ children }) => <code className="text-sm bg-gray-100 p-1 rounded">{children}</code>,
     inlineCode: ({ children }) => <code className="text-sm bg-gray-100 p-1 rounded">{children}</code>,
     img: ({ src, alt }) => <img className="rounded-lg p-4 w-8/12" src={src} alt={alt} />,
