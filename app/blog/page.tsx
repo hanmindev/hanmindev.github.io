@@ -13,13 +13,13 @@ function BlogCardWrapper({ metadata, link }: { metadata: BlogMeta, link: string 
 }
 
 // I really don't like this, but I can't think of a better static way to do this
-import { metadata as uoft_cs } from "@/app/blog/uoft-cs-guide/page.mdx";
-import { metadata as interview } from "@/app/blog/cs-interview-guide/page.mdx";
-import { metadata as mirrorboard } from "@/app/blog/mirrorboard/page.mdx";
-import { metadata as split_keyboard } from "@/app/blog/split-keyboard/page.mdx";
-import { metadata as mcmv } from "@/app/blog/mcmv/page.mdx";
-import { metadata as graphing } from "@/app/blog/3d-graphing-minecraft/page.mdx";
-import { metadata as btc } from "@/app/blog/minecraft-bitcoin/page.mdx";
+import { metadata as uoft_cs } from "@/app/blog/(blogs)/uoft-cs-guide/page.mdx";
+import { metadata as interview } from "@/app/blog/(blogs)/cs-interview-guide/page.mdx";
+import { metadata as mirrorboard } from "@/app/blog/(blogs)/mirrorboard/page.mdx";
+import { metadata as split_keyboard } from "@/app/blog/(blogs)/split-keyboard/page.mdx";
+import { metadata as mcmv } from "@/app/blog/(blogs)/mcmv/page.mdx";
+import { metadata as graphing } from "@/app/blog/(blogs)/3d-graphing-minecraft/page.mdx";
+import { metadata as btc } from "@/app/blog/(blogs)/minecraft-bitcoin/page.mdx";
 import { Metadata } from "next";
 
 export default function Home() {
