@@ -4,6 +4,7 @@ import { ExternalLink } from "@/app/components/external_link";
 import { CopyLinkIcon } from "@/app/components/icons/buttons";
 import { CopyButton } from "@/app/components/copy_button";
 import clsx from "clsx";
+import { Comments } from "@/app/components/comments";
 
 export function headerNameToSectionName(header_val: 1 | 2 | 3 | 4 | 5 | 6, header_name: any): string {
   if (typeof header_name != "string" || header_val == 1) {
@@ -13,7 +14,10 @@ export function headerNameToSectionName(header_val: 1 | 2 | 3 | 4 | 5 | 6, heade
   return "#".repeat(header_val - 2) + header_name.toLowerCase().replaceAll(/[^0-9a-z-_ ]/gi, "").replaceAll(" ", "-").replaceAll(/-+/gi, "-");
 }
 
-function LinkableHeader({ header_val, children }: { header_val: 1 | 2 | 3 | 4 | 5 | 6, children: React.ReactNode }) {
+export function LinkableHeader({ header_val, children }: {
+  header_val: 1 | 2 | 3 | 4 | 5 | 6,
+  children: React.ReactNode
+}) {
   let section_name = headerNameToSectionName(header_val, children);
   let link_to_section = section_name == "" ? "" : "#" + section_name;
 
