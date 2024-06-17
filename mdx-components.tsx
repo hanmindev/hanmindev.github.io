@@ -69,7 +69,7 @@ export function LinkableHeader({ header_val, children }: {
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
-    h1: ({ children }) => <LinkableHeader  header_val={1}>{children}</LinkableHeader>,
+    h1: ({ children }) => <LinkableHeader header_val={1}>{children}</LinkableHeader>,
     h2: ({ children }) => <LinkableHeader header_val={2}>{children}</LinkableHeader>,
     h3: ({ children }) => <LinkableHeader header_val={3}>{children}</LinkableHeader>,
     h4: ({ children }) => <LinkableHeader header_val={4}>{children}</LinkableHeader>,
@@ -80,9 +80,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     hr: () => <div className="divider"></div>,
     q: ({ children }) => <blockquote className="text-base italic">{children}</blockquote>,
     blockquote: ({ children }) => <blockquote className="text-base italic">{children}</blockquote>,
-    ul: ({ children }) => <ul className="list-disc list-inside pl-4">{children}</ul>,
-    ol: ({ children }) => <ol className="list-decimal list-inside pl-4">{children}</ol>,
-    li: ({ children }) => <li className="my-2 text-gray-50 md:list-outside">{children}</li>,
+    ul: ({ children }) => <ul className="text-base list-disc list-inside pl-4">{children}</ul>,
+    ol: ({ children }) => <ol className="text-base list-decimal list-inside pl-4">{children}</ol>,
+    li: ({ children }) => <li className="my-2 text-base md:list-outside">{children}</li>,
     code: ({ children }) => <code className="text-sm bg-gray-100 p-1 rounded">{children}</code>,
     inlineCode: ({ children }) => <code className="text-sm bg-gray-100 p-1 rounded">{children}</code>,
     img: ({ src, alt }) => <img className="rounded-lg p-4 w-8/12" src={src} alt={alt} />,
