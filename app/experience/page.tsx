@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import CitadelLogo from "../../public/company_logos/citadel.jpg";
 import RobloxLogo from "../../public/company_logos/roblox.jpg";
 import GraycoreLogo from "../../public/company_logos/graycore.jpg";
 import NorvaleLogo from "../../public/company_logos/norvale.jpg";
@@ -23,9 +24,9 @@ function ExpNode({ src, title, company, duration, location, description }: {
       <span className="h-full w-0.5 bg-gray-600 mr-2 mt-2" />
     </div>
     <div>
-      <p className="text-xl font-semibold">{title}</p>
-      {location ? <p className="italic text-sm">{company} @ {location}</p> :
-        <p className="italic text-sm">{company} (Remote)</p>}
+      {location ? <p className="text-xl font-semibold">{company} @ {location}</p> :
+        <p className="text-xl font-semibold">{company} (Remote)</p>}
+      <p className="italic text-sm">{title}</p>
       <p className="italic text-sm">{duration}</p>
       <p className="mt-2 mb-4 text-sm">{description}</p>
     </div>
@@ -43,9 +44,12 @@ export default function Home() {
     <p>Places I've been over the years.</p>
 
     <ExpList>
-      <ExpNode src={RobloxLogo} title="Software Engineer Intern" company="Roblox" duration="May 2024 - August 2024"
+      <ExpNode src={CitadelLogo} title="Incoming Software Engineering Intern - Post Trade Engineering" company="Citadel" duration="September 2024 - December 2024"
+               location="New York City, NY"
+               description="I'll be joining Citadel this fall!" />
+      <ExpNode src={RobloxLogo} title="Software Engineer Intern - Infrastructure Security" company="Roblox" duration="May 2024 - August 2024"
                location="San Mateo, CA"
-               description="I'll be joining Roblox this summer!" />
+               description="To improve the consistency of our Cloud Security baseline, I am currently building an end-to-end system to monitor 10k+ security control instances throughout the organization using Go and AWS. Aspects that my system will monitor include the health status of deployment pipelines and infrastructure drift." />
       <ExpNode src={GraycoreLogo} title="Software Engineering Intern" company="Graycore"
                duration="May 2023 - August 2023"
                description="I did a variety of tasks, such as integrating Nx into our Angular monorepo CI pipeline, creating a custom systems integration to transform and update information between enterprise systems, and building a system to automatically track and synchronize data using a custom Hubspot public app and Azure Functions." />
