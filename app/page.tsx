@@ -9,7 +9,9 @@ export default function Home() {
     <p>I'm a Computer Science student at the University of Toronto. I'm mainly interested in back-end development
       and systems programming, but I'm always looking to learn new things!</p>
 
-    <p>Currently I am working on a custom compiler written in Rust to convert my Ingot programming language to
+    <p>Currently, I am doing an internship at Roblox at the San Mateo office. In the fall, I will be doing an internship at Citadel in New York. Learn more in the <ExternalLink href="experience/">experience</ExternalLink> section.</p>
+
+    <p>In my free time, I am working on a custom compiler written in Rust to convert my Ingot programming language to
       Minecraft's .mcfunction format.</p>
 
     <div className="divider"></div>
