@@ -36,12 +36,12 @@ export function LinkableHeader({ header_val, children }: {
       break;
     case 3:
       header = <h3
-        className="font-black text-2xl font-bold">{children}</h3>;
+        className="text-2xl font-bold">{children}</h3>;
       pt = "pt-8";
       break;
     case 4:
       header = <h4
-        className="text-2xl font-bold">{children}</h4>;
+        className="text-xl font-bold">{children}</h4>;
       pt = "pt-8";
       break;
     case 5:
