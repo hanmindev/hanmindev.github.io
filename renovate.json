@@ -8,6 +8,12 @@
   },
   "packageRules": [
     {
+      "packagePatterns": [
+        "*"
+      ],
+      "enabled": false
+    },
+    {
       "automerge": true,
       "matchPackageNames": [
         "app/docs/ingot"
