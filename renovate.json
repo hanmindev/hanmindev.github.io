@@ -10,8 +10,10 @@
       "matchPackageNames": ["*"]
     },
     {
+      "enabled": true,
       "automerge": true,
-      "matchManagers": ["git-submodules"]
+      "matchManagers": ["git-submodules"],
+      "matchPackageNames": ["*"]
     }
   ]
 }
