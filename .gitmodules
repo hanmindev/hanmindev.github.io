@@ -1,0 +1,3 @@
+[submodule "app/docs/ingot"]
+	path = app/docs/ingot
+	url = https://github.com/hanmindev/ingot
