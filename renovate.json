@@ -10,7 +10,7 @@
     {
       "automerge": true,
       "matchPackageNames": [
-        "ingot"
+        "app/docs/ingot"
       ]
     }
   ]
