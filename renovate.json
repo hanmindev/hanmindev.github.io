@@ -7,13 +7,13 @@
   "packageRules": [
     {
       "enabled": false,
-      "matchPackageNames": ["*"]
+      "matchManagers": ["npm", "github-actions"]
     },
     {
       "enabled": true,
       "automerge": true,
-      "matchManagers": ["git-submodules"],
-      "matchPackageNames": ["*"]
+      "ignoreTests": true,
+      "matchManagers": ["git-submodules"]
     }
   ]
 }
