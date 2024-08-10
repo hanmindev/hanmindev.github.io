@@ -1,17 +1,21 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices"],
+  "extends": [
+    "config:best-practices"
+  ],
   "git-submodules": {
     "enabled": true
   },
   "packageRules": [
     {
-      "enabled": false,
-      "matchPackageNames": ["*"]
+      "packagePatterns": [
+        "*"
+      ],
+      "enabled": false
     },
     {
       "automerge": true,
-      "matchPackageNames": ["app/docs/ingot"]
+      "matchManagers": ["git-submodules"]
     }
   ]
 }
