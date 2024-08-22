@@ -49,7 +49,7 @@ export default function Home() {
                description="I'll be joining Citadel this fall!" />
       <ExpNode src={RobloxLogo} title="Software Engineer Intern - Infrastructure Security" company="Roblox" duration="May 2024 - August 2024"
                location="San Mateo, CA"
-               description="To improve the consistency of our Cloud Security baseline, I am currently building an end-to-end system to monitor 10k+ security control instances throughout the organization using Go and AWS. Aspects that my system will monitor include the health status of deployment pipelines and infrastructure drift." />
+               description="To improve the consistency of our Cloud Security baseline, I built an end-to-end system to monitor 30k+ security control instances throughout the organization using Go and AWS. My system monitors the health status of deployment pipelines and infrastructure drift, displays the results on Grafana, and sends alerts through Slack." />
       <ExpNode src={GraycoreLogo} title="Software Engineering Intern" company="Graycore"
                duration="May 2023 - August 2023"
                description="Performed a variety of tasks, such as integrating Nx into our Angular monorepo CI pipeline, creating a custom systems integration to transform and update information between enterprise systems, and building a system to automatically track and synchronize data using a custom Hubspot public app and Azure Functions." />
