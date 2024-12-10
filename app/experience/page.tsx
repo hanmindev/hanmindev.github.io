@@ -43,10 +43,10 @@ export default function Home() {
     <p>Places I've been over the years.</p>
 
     <ExpList>
-      <ExpNode src={CitadelLogo} title="Incoming Software Engineering Intern - Post Trade Engineering" company="Citadel" duration="September 2024 - December 2024"
+      <ExpNode src={CitadelLogo} title="Software Engineering Intern" company="Citadel" duration="September 2024 - December 2024"
                location="New York City, NY"
-               description="Currently interning!" />
-      <ExpNode src={RobloxLogo} title="Software Engineer Intern - Infrastructure Security" company="Roblox" duration="May 2024 - August 2024"
+               description="Trade Management & Transaction Services Engineering" />
+      <ExpNode src={RobloxLogo} title="Software Engineer Intern" company="Roblox" duration="May 2024 - August 2024"
                location="San Mateo, CA"
                description="To improve the consistency of our Cloud Security baseline, I built an end-to-end system to monitor 30k+ security control instances throughout the organization using Go and AWS. My system monitors the health status of deployment pipelines and infrastructure drift, displays the results on Grafana, and sends alerts through Slack." />
       <ExpNode src={GraycoreLogo} title="Software Engineering Intern" company="Graycore"
